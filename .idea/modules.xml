@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-client-one.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-client-one.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-client-two.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-client-two.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-client-one/multi-module-sample-sspark.eureka-client-one.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-client-one/multi-module-sample-sspark.eureka-client-one.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-client-two/multi-module-sample-sspark.eureka-client-two.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-client-two/multi-module-sample-sspark.eureka-client-two.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eureka-server/multi-module-sample-sspark.eureka-server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eureka-server/multi-module-sample-sspark.eureka-server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scg-one/multi-module-sample-sspark.scg-one.main.iml" filepath="$PROJECT_DIR$/.idea/modules/scg-one/multi-module-sample-sspark.scg-one.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/rf.eureka-client-two.main.iml" filepath="$PROJECT_DIR$/.idea/modules/rf.eureka-client-two.main.iml" />
+    </modules>
+  </component>
+</project>

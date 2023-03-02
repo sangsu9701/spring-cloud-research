@@ -1,0 +1,57 @@
+#################################################################
+#################### Application Settings #######################
+
+logging:
+  level:
+    root: INFO
+    com.example.myapp: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: "logs/my-application.log"
+    pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  encoder:
+    console:
+      charset: UTF-8
+      pattern:
+        date: "yyyy-MM-dd HH:mm:ss.SSS"
+        level: "%-5level"
+        logger: "%logger{36}"
+        message: "%msg%n"
+    file:
+      charset: UTF-8
+      pattern:
+        date: "yyyy-MM-dd HH:mm:ss.SSS"
+        level: "%-5level"
+        logger: "%logger{36}"
+        message: "%msg%n"
+  rolling-policy:
+    file-name-pattern: "logs/my-application.%d{yyyy-MM-dd}.%i.log"
+    max-history: 7
+    total-size-cap: 1GB
+
+# Elasticsearch properties
+elasticsearch:
+  internalHosts:
+    - 192.168.0.214
+    - 192.168.0.215
+    - 192.168.0.216
+  externalHosts:
+    - 210.118.213.143
+    - 210.118.213.144
+    - 210.118.213.145
+  scheme: http
+  port: 9200
+  # Use the internal hosts if the request is coming from the internal network, otherwise use the external hosts
+  hosts:
+    ${spring.cloud.config.clientIpFilter.internal-network==true ? elasticsearch.internalHosts : elasticsearch.externalHosts}
+
+# Swagger properties
+swagger:
+  title: Lucy3.0 DEV API
+  description: Lucy3.0 DEV API For Elasticsearch
+  version: 1.0
+  basePackage: rf.com.controller
+  enable: true
+  resourceHandler: /swagger-ui/**
+  resourceLocations: classpath:/META-INF/resources/webjars/springfox-swagger-ui/
