@@ -33,13 +33,9 @@ logging:
 # Elasticsearch properties
 elasticsearch:
   internalHosts:
-    - 192.168.0.214
-    - 192.168.0.215
-    - 192.168.0.216
+    - elasticsearch.inner.host
   externalHosts:
-    - 210.118.213.143
-    - 210.118.213.144
-    - 210.118.213.145
+    - elasticsearch.external.host
   scheme: http
   port: 9200
   # Use the internal hosts if the request is coming from the internal network, otherwise use the external hosts

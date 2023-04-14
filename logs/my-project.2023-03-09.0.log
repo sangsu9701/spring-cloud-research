@@ -1,0 +1,44 @@
+2023-03-09 15:34:53.935 [restartedMain] INFO  rf.com.EurekaClientOneApplication - Starting EurekaClientOneApplication using Java 11.0.12 on DESKTOP-F0492B7 with PID 89264 (C:\Users\PARKSANGSU\eclipse_201912-workspace\multi-module-sample-sspark\eureka-client-one\build\classes\java\main started by PARKSANGSU in C:\Users\PARKSANGSU\eclipse_201912-workspace\multi-module-sample-sspark)
+2023-03-09 15:34:53.943 [restartedMain] INFO  rf.com.EurekaClientOneApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-09 15:34:54.013 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-09 15:34:54.013 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-09 15:34:55.997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-09 15:34:56.029 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Elasticsearch repository interfaces.
+2023-03-09 15:34:56.035 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-09 15:34:56.041 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-09 15:34:56.521 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a834cb9a-8397-3737-869a-2a5ae5b73649
+2023-03-09 15:34:57.747 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2023-03-09 15:34:57.774 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2023-03-09 15:34:57.775 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-09 15:34:57.775 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-09 15:34:58.076 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-09 15:34:58.076 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4062 ms
+2023-03-09 15:34:59.777 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-09 15:35:00.098 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2023-03-09 15:35:00.929 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-03-09 15:35:00.996 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-03-09 15:35:01.024 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-03-09 15:35:01.111 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-03-09 15:35:01.120 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-03-09 15:35:01.159 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-03-09 15:35:01.160 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-03-09 15:35:01.160 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-03-09 15:35:01.160 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-03-09 15:35:01.161 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-03-09 15:35:01.161 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-03-09 15:35:01.161 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-03-09 15:35:01.453 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-03-09 15:35:01.456 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-03-09 15:35:01.458 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-03-09 15:35:01.463 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1678343701462 with initial instances count: 1
+2023-03-09 15:35:01.464 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application EUREKA-CLIENT-ONE with eureka with status UP
+2023-03-09 15:35:01.464 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1678343701464, current=UP, previous=STARTING]
+2023-03-09 15:35:01.466 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2023-03-09 15:35:01.466 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_EUREKA-CLIENT-ONE/host.docker.internal:eureka-client-one:8090: registering service...
+2023-03-09 15:35:01.481 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2023-03-09 15:35:01.481 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8090
+2023-03-09 15:35:01.506 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_EUREKA-CLIENT-ONE/host.docker.internal:eureka-client-one:8090 - registration status: 204
+2023-03-09 15:35:01.918 [restartedMain] INFO  rf.com.EurekaClientOneApplication - Started EurekaClientOneApplication in 9.076 seconds (JVM running for 10.464)
+2023-03-09 15:36:28.329 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-09 15:36:28.329 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-09 15:36:28.331 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms

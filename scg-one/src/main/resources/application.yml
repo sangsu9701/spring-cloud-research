@@ -5,7 +5,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8787/eureka
+      defaultZone: http://192.168.25.26:8787/eureka
 #predicates : api-gateway 서버로 요청이 들어왔을 때 요청 url의 조건을 명시합니다.
 #  uri
 #  predicates 조건에 매칭되는 url을 어디로 라우팅 시킬지 명시합니다.

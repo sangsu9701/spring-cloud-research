@@ -1,207 +1,70 @@
-2023-03-02 14:06:12.623  INFO 40984 --- [restartedMain] rf.com.EurekaClientTwoApplication        : Starting EurekaClientTwoApplication using Java 11.0.12 on DESKTOP-F0492B7 with PID 40984 (C:\Users\PARKSANGSU\eclipse_201912-workspace\multi-module-sample-sspark\eureka-client-two\build\classes\java\main started by PARKSANGSU in C:\Users\PARKSANGSU\eclipse_201912-workspace\multi-module-sample-sspark)
-2023-03-02 14:06:12.624  INFO 40984 --- [restartedMain] rf.com.EurekaClientTwoApplication        : No active profile set, falling back to 1 default profile: "default"
-2023-03-02 14:06:12.676  INFO 40984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-02 14:06:12.676  INFO 40984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-02 14:06:14.087  INFO 40984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2023-03-02 14:06:14.106  INFO 40984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Elasticsearch repository interfaces.
-2023-03-02 14:06:14.111  INFO 40984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2023-03-02 14:06:14.118  INFO 40984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Reactive Elasticsearch repository interfaces.
-2023-03-02 14:06:14.470  INFO 40984 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=52ed2771-d776-3d36-9bbb-e1932151838d
-2023-03-02 14:06:15.317  INFO 40984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
-2023-03-02 14:06:15.332  INFO 40984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-02 14:06:15.332  INFO 40984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-03-02 14:06:15.544  INFO 40984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-02 14:06:15.544  INFO 40984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2867 ms
-2023-03-02 14:06:17.374  INFO 40984 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-03-02 14:06:17.683  WARN 40984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2023-03-02 14:06:18.685  INFO 40984 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-03-02 14:06:18.739  WARN 40984 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-03-02 14:06:18.767  INFO 40984 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-03-02 14:06:18.869  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2023-03-02 14:06:18.878  INFO 40984 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-03-02 14:06:18.909  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-03-02 14:06:18.910  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-03-02 14:06:18.910  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-03-02 14:06:18.910  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-03-02 14:06:18.910  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-03-02 14:06:18.910  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2023-03-02 14:06:18.910  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-03-02 14:06:19.167  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-03-02 14:06:19.169  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2023-03-02 14:06:19.172  INFO 40984 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-03-02 14:06:19.176  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1677733579175 with initial instances count: 1
-2023-03-02 14:06:19.177  INFO 40984 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-CLIENT-TWO with eureka with status UP
-2023-03-02 14:06:19.178  INFO 40984 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1677733579178, current=UP, previous=STARTING]
-2023-03-02 14:06:19.180  INFO 40984 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT-TWO/host.docker.internal:eureka-client-two:8091: registering service...
-2023-03-02 14:06:19.194  INFO 40984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
-2023-03-02 14:06:19.195  INFO 40984 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8091
-2023-03-02 14:06:19.228  INFO 40984 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT-TWO/host.docker.internal:eureka-client-two:8091 - registration status: 204
-2023-03-02 14:06:19.685  INFO 40984 --- [restartedMain] rf.com.EurekaClientTwoApplication        : Started EurekaClientTwoApplication in 8.051 seconds (JVM running for 8.816)
-2023-03-02 14:07:25.302  INFO 37628 --- [restartedMain] rf.com.EurekaClientTwoApplication        : Starting EurekaClientTwoApplication using Java 11.0.12 on DESKTOP-F0492B7 with PID 37628 (C:\Users\PARKSANGSU\eclipse_201912-workspace\multi-module-sample-sspark\eureka-client-two\build\classes\java\main started by PARKSANGSU in C:\Users\PARKSANGSU\eclipse_201912-workspace\multi-module-sample-sspark)
-2023-03-02 14:07:25.303  INFO 37628 --- [restartedMain] rf.com.EurekaClientTwoApplication        : No active profile set, falling back to 1 default profile: "default"
-2023-03-02 14:07:25.352  INFO 37628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-02 14:07:25.352  INFO 37628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-02 14:07:26.785  INFO 37628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
-2023-03-02 14:07:26.809  INFO 37628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Elasticsearch repository interfaces.
-2023-03-02 14:07:26.815  INFO 37628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
-2023-03-02 14:07:26.822  INFO 37628 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Reactive Elasticsearch repository interfaces.
-2023-03-02 14:07:27.159  INFO 37628 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=52ed2771-d776-3d36-9bbb-e1932151838d
-2023-03-02 14:07:28.002  INFO 37628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
-2023-03-02 14:07:28.016  INFO 37628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-03-02 14:07:28.017  INFO 37628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
-2023-03-02 14:07:28.199  INFO 37628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-03-02 14:07:28.199  INFO 37628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2846 ms
-2023-03-02 14:07:29.753  INFO 37628 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-03-02 14:07:30.003  WARN 37628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2023-03-02 14:07:30.817  INFO 37628 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
-2023-03-02 14:07:30.877  WARN 37628 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2023-03-02 14:07:30.906  INFO 37628 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2023-03-02 14:07:31.012  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2023-03-02 14:07:31.023  INFO 37628 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-03-02 14:07:31.057  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2023-03-02 14:07:31.058  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2023-03-02 14:07:31.058  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2023-03-02 14:07:31.058  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2023-03-02 14:07:31.058  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2023-03-02 14:07:31.059  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2023-03-02 14:07:31.059  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2023-03-02 14:07:31.332  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2023-03-02 14:07:31.334  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2023-03-02 14:07:31.337  INFO 37628 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2023-03-02 14:07:31.341  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1677733651340 with initial instances count: 2
-2023-03-02 14:07:31.342  INFO 37628 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-CLIENT-TWO with eureka with status UP
-2023-03-02 14:07:31.343  INFO 37628 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1677733651343, current=UP, previous=STARTING]
-2023-03-02 14:07:31.345  INFO 37628 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT-TWO/host.docker.internal:eureka-client-two:8091: registering service...
-2023-03-02 14:07:31.361  INFO 37628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
-2023-03-02 14:07:31.362  INFO 37628 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8091
-2023-03-02 14:07:31.393  INFO 37628 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT-TWO/host.docker.internal:eureka-client-two:8091 - registration status: 204
-2023-03-02 14:07:31.874  INFO 37628 --- [restartedMain] rf.com.EurekaClientTwoApplication        : Started EurekaClientTwoApplication in 7.468 seconds (JVM running for 8.2)
-2023-03-02 14:09:25.510  INFO 37628 --- [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-02 14:09:25.511  INFO 37628 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-03-02 14:09:25.512  INFO 37628 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-03-02 14:09:25.547  WARN 37628 --- [http-nio-8091-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'agg_field' for method parameter type String is not present]
-2023-03-02 14:09:48.305 ERROR 37628 --- [http-nio-8091-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class org.elasticsearch.search.aggregations.bucket.terms.ParsedLongTerms cannot be cast to class org.elasticsearch.search.aggregations.bucket.terms.ParsedStringTerms (org.elasticsearch.search.aggregations.bucket.terms.ParsedLongTerms and org.elasticsearch.search.aggregations.bucket.terms.ParsedStringTerms are in unnamed module of loader 'app')] with root cause
-
-java.lang.ClassCastException: class org.elasticsearch.search.aggregations.bucket.terms.ParsedLongTerms cannot be cast to class org.elasticsearch.search.aggregations.bucket.terms.ParsedStringTerms (org.elasticsearch.search.aggregations.bucket.terms.ParsedLongTerms and org.elasticsearch.search.aggregations.bucket.terms.ParsedStringTerms are in unnamed module of loader 'app')
-	at rf.com.service.AggregationService.transformResponse(AggregationService.java:100) ~[main/:na]
-	at rf.com.service.AggregationService.getAggregationResult(AggregationService.java:40) ~[main/:na]
-	at rf.com.controller.AggregationController.getTermsAggregation(AggregationController.java:31) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.9.jar:2.7.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
-
-2023-03-02 14:10:35.077 ERROR 37628 --- [http-nio-8091-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is ElasticsearchStatusException[Elasticsearch exception [type=search_phase_execution_exception, reason=all shards failed]]; nested: ElasticsearchException[Elasticsearch exception [type=illegal_argument_exception, reason=Text fields are not optimised for operations that require per-document field data like aggregations and sorting, so these operations are disabled by default. Please use a keyword field instead. Alternatively, set fielddata=true on [hospital_word] in order to load field data by uninverting the inverted index. Note that this can use significant memory.]]; nested: ElasticsearchException[Elasticsearch exception [type=illegal_argument_exception, reason=Text fields are not optimised for operations that require per-document field data like aggregations and sorting, so these operations are disabled by default. Please use a keyword field instead. Alternatively, set fielddata=true on [hospital_word] in order to load field data by uninverting the inverted index. Note that this can use significant memory.]];] with root cause
-
-org.elasticsearch.ElasticsearchException: Elasticsearch exception [type=illegal_argument_exception, reason=Text fields are not optimised for operations that require per-document field data like aggregations and sorting, so these operations are disabled by default. Please use a keyword field instead. Alternatively, set fielddata=true on [hospital_word] in order to load field data by uninverting the inverted index. Note that this can use significant memory.]
-	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:496) ~[elasticsearch-7.10.2.jar:7.10.2]
-	at org.elasticsearch.ElasticsearchException.fromXContent(ElasticsearchException.java:407) ~[elasticsearch-7.10.2.jar:7.10.2]
-	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:437) ~[elasticsearch-7.10.2.jar:7.10.2]
-	at org.elasticsearch.ElasticsearchException.fromXContent(ElasticsearchException.java:407) ~[elasticsearch-7.10.2.jar:7.10.2]
-	at org.elasticsearch.ElasticsearchException.innerFromXContent(ElasticsearchException.java:437) ~[elasticsearch-7.10.2.jar:7.10.2]
-	at org.elasticsearch.ElasticsearchException.failureFromXContent(ElasticsearchException.java:603) ~[elasticsearch-7.10.2.jar:7.10.2]
-	at org.elasticsearch.rest.BytesRestResponse.errorFromXContent(BytesRestResponse.java:179) ~[elasticsearch-7.10.2.jar:7.10.2]
-	at org.elasticsearch.client.RestHighLevelClient.parseEntity(RestHighLevelClient.java:1911) ~[elasticsearch-rest-high-level-client-7.10.2.jar:7.10.2]
-	at org.elasticsearch.client.RestHighLevelClient.parseResponseException(RestHighLevelClient.java:1888) ~[elasticsearch-rest-high-level-client-7.10.2.jar:7.10.2]
-	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1645) ~[elasticsearch-rest-high-level-client-7.10.2.jar:7.10.2]
-	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1602) ~[elasticsearch-rest-high-level-client-7.10.2.jar:7.10.2]
-	at org.elasticsearch.client.RestHighLevelClient.performRequestAndParseEntity(RestHighLevelClient.java:1572) ~[elasticsearch-rest-high-level-client-7.10.2.jar:7.10.2]
-	at org.elasticsearch.client.RestHighLevelClient.search(RestHighLevelClient.java:1088) ~[elasticsearch-rest-high-level-client-7.10.2.jar:7.10.2]
-	at rf.com.service.AggregationService.getAggregationResponse(AggregationService.java:92) ~[main/:na]
-	at rf.com.service.AggregationService.getAggregationResult(AggregationService.java:39) ~[main/:na]
-	at rf.com.controller.AggregationController.getTermsAggregation(AggregationController.java:31) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.7.9.jar:2.7.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
-	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
-
-2023-03-02 14:12:31.070  INFO 37628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-03-02 14:17:31.084  INFO 37628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-03-02 14:22:31.087  INFO 37628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-03-02 14:27:31.092  INFO 37628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-03-02 14:32:31.101  INFO 37628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2023-03-02 14:37:31.105  INFO 37628 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:07:01.851  INFO 91052 --- [restartedMain] rf.com.EurekaClientTwoApplication        : Starting EurekaClientTwoApplication using Java 11.0.12 on DESKTOP-F0492B7 with PID 91052 (C:\Users\PARKSANGSU\eclipse_201912-workspace\multi-module-sample-sspark\eureka-client-two\build\classes\java\main started by PARKSANGSU in C:\Users\PARKSANGSU\eclipse_201912-workspace\multi-module-sample-sspark)
+2023-03-10 10:07:01.858  INFO 91052 --- [restartedMain] rf.com.EurekaClientTwoApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-03-10 10:07:01.915  INFO 91052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-10 10:07:01.915  INFO 91052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-10 10:07:03.791  INFO 91052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2023-03-10 10:07:03.821  INFO 91052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 Elasticsearch repository interfaces.
+2023-03-10 10:07:03.828  INFO 91052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2023-03-10 10:07:03.835  INFO 91052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2023-03-10 10:07:04.311  INFO 91052 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=52ed2771-d776-3d36-9bbb-e1932151838d
+2023-03-10 10:07:05.322  INFO 91052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2023-03-10 10:07:05.336  INFO 91052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-10 10:07:05.336  INFO 91052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-10 10:07:05.588  INFO 91052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-10 10:07:05.588  INFO 91052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3672 ms
+2023-03-10 10:07:07.588  INFO 91052 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-03-10 10:07:07.965  WARN 91052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-03-10 10:07:09.201  INFO 91052 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-03-10 10:07:09.271  WARN 91052 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-03-10 10:07:09.309  INFO 91052 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-03-10 10:07:09.441  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-03-10 10:07:09.461  INFO 91052 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:07:09.516  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-03-10 10:07:09.517  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-03-10 10:07:09.517  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-03-10 10:07:09.517  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-03-10 10:07:09.517  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-03-10 10:07:09.517  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-03-10 10:07:09.518  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-03-10 10:07:09.964  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-03-10 10:07:09.967  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-03-10 10:07:09.971  INFO 91052 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-03-10 10:07:09.978  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1678410429977 with initial instances count: 0
+2023-03-10 10:07:09.979  INFO 91052 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-CLIENT-TWO with eureka with status UP
+2023-03-10 10:07:09.981  INFO 91052 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1678410429981, current=UP, previous=STARTING]
+2023-03-10 10:07:09.984  INFO 91052 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT-TWO/host.docker.internal:eureka-client-two:8091: registering service...
+2023-03-10 10:07:10.005  INFO 91052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2023-03-10 10:07:10.006  INFO 91052 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8091
+2023-03-10 10:07:10.048  INFO 91052 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_EUREKA-CLIENT-TWO/host.docker.internal:eureka-client-two:8091 - registration status: 204
+2023-03-10 10:07:10.765  INFO 91052 --- [restartedMain] rf.com.EurekaClientTwoApplication        : Started EurekaClientTwoApplication in 10.163 seconds (JVM running for 11.182)
+2023-03-10 10:07:39.978  INFO 91052 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-03-10 10:07:39.979  INFO 91052 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-03-10 10:07:39.979  INFO 91052 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-03-10 10:07:39.979  INFO 91052 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-03-10 10:07:39.979  INFO 91052 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-03-10 10:07:39.979  INFO 91052 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2023-03-10 10:07:39.979  INFO 91052 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-03-10 10:07:40.000  INFO 91052 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-03-10 10:08:12.574  INFO 91052 --- [http-nio-8091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-10 10:08:12.574  INFO 91052 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-10 10:08:12.575  INFO 91052 --- [http-nio-8091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-10 10:12:09.523  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:17:09.534  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:22:09.544  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:27:09.549  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:32:09.558  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:37:09.561  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:42:09.562  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:47:09.571  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:52:09.586  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 10:57:09.593  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:02:09.599  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:07:09.610  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:12:09.621  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:17:09.629  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:22:09.640  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:27:09.646  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:32:09.651  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:37:09.662  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:42:09.668  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-03-10 11:47:09.679  INFO 91052 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
